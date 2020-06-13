@@ -1,0 +1,20 @@
+{% extends "_layout.html" %}
+
+
+{% block title %}Home{% endblock %}
+
+
+{% block head %}
+    {% assets "css-home" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    {% assets "js-home" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}" defer></script>
+    {% endassets %}
+{% endblock %}
+
+
+{% block main %}
+    <h2>Home</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed quisquam beatae possimus nihil eaque, maiores sint debitis perspiciatis repellat accusantium? Error quae soluta quis explicabo. Temporibus nobis itaque mollitia.</p>
+{% endblock %}

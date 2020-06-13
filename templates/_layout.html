@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+        {% block head %}
+        {% endblock %}
+
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Header goes here.</h1>
+        </header>
+
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p>Footer goes here.</p>
+        </footer>
+    </body>
+</html>

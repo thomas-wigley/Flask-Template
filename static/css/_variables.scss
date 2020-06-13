@@ -1,0 +1,9 @@
+
+$page-background: #212121;
+$text-foreground: #ffffff;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
